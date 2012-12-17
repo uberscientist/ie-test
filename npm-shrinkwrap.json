@@ -1,0 +1,178 @@
+{
+  "dependencies": {
+    "pulsar": {
+      "version": "0.1.7",
+      "dependencies": {
+        "coffee-script": {
+          "version": "1.4.0"
+        },
+        "protosock": {
+          "version": "0.1.2",
+          "dependencies": {
+            "async": {
+              "version": "0.1.22"
+            },
+            "engine.io": {
+              "version": "0.3.10",
+              "dependencies": {
+                "debug": {
+                  "version": "0.6.0"
+                },
+                "ws": {
+                  "version": "0.4.24",
+                  "dependencies": {
+                    "commander": {
+                      "version": "0.6.1"
+                    },
+                    "tinycolor": {
+                      "version": "0.0.1"
+                    },
+                    "options": {
+                      "version": "0.0.3"
+                    }
+                  }
+                },
+                "base64id": {
+                  "version": "0.1.0"
+                }
+              }
+            },
+            "engine.io-client": {
+              "version": "0.3.10",
+              "dependencies": {
+                "ws": {
+                  "version": "0.4.20",
+                  "dependencies": {
+                    "commander": {
+                      "version": "0.6.1"
+                    },
+                    "tinycolor": {
+                      "version": "0.0.1"
+                    },
+                    "options": {
+                      "version": "0.0.3"
+                    }
+                  }
+                },
+                "xmlhttprequest": {
+                  "version": "1.5.0"
+                },
+                "debug": {
+                  "version": "0.6.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "vein": {
+      "version": "0.4.2",
+      "from": "git://github.com/bitmage/vein.git",
+      "dependencies": {
+        "coffee-script": {
+          "version": "1.4.0"
+        },
+        "async": {
+          "version": "0.1.22"
+        },
+        "protosock": {
+          "version": "0.0.6",
+          "from": "git://github.com/bitmage/protosock.git",
+          "dependencies": {
+            "engine.io": {
+              "version": "0.2.2",
+              "dependencies": {
+                "debug": {
+                  "version": "0.6.0"
+                },
+                "ws": {
+                  "version": "0.4.24",
+                  "dependencies": {
+                    "commander": {
+                      "version": "0.6.1"
+                    },
+                    "tinycolor": {
+                      "version": "0.0.1"
+                    },
+                    "options": {
+                      "version": "0.0.3"
+                    }
+                  }
+                }
+              }
+            },
+            "engine.io-client": {
+              "version": "0.2.2",
+              "dependencies": {
+                "ws": {
+                  "version": "0.4.20",
+                  "dependencies": {
+                    "commander": {
+                      "version": "0.6.1"
+                    },
+                    "tinycolor": {
+                      "version": "0.0.1"
+                    },
+                    "options": {
+                      "version": "0.0.3"
+                    }
+                  }
+                },
+                "xmlhttprequest": {
+                  "version": "1.4.2"
+                },
+                "debug": {
+                  "version": "0.6.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "connect": {
+      "version": "2.7.1",
+      "dependencies": {
+        "qs": {
+          "version": "0.5.1"
+        },
+        "formidable": {
+          "version": "1.0.11"
+        },
+        "cookie-signature": {
+          "version": "0.0.1"
+        },
+        "crc": {
+          "version": "0.2.0"
+        },
+        "cookie": {
+          "version": "0.0.5"
+        },
+        "bytes": {
+          "version": "0.1.0"
+        },
+        "send": {
+          "version": "0.1.0",
+          "dependencies": {
+            "mime": {
+              "version": "1.2.6"
+            },
+            "range-parser": {
+              "version": "0.0.4"
+            }
+          }
+        },
+        "fresh": {
+          "version": "0.1.0"
+        },
+        "pause": {
+          "version": "0.0.1"
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    }
+  }
+}

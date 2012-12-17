@@ -1,0 +1,9 @@
+{
+  "name": "ie-test",
+  "version": "0.0.1",
+  "dependecies": {
+    "pulsar": "*",
+    "connect": "*",
+    "vein": "*"
+  }
+}

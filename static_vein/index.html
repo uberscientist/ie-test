@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='pulsar.js'></script>
+    <script src='vein.js'></script>
+    <script>
+      var vein = Vein.createClient({host: 'localhost', port: 4002});
+
+      vein.ready(function(services){
+        console.log('services:' + services);
+        vein.test('testing!', [2,3], function(result){
+          console.log(result);
+        });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

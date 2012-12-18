@@ -1,2 +1,3 @@
-./node_modules/
+current-versions/node_modules/
+node_modules/
 *.swp

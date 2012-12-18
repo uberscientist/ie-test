@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='pulsar.js'></script>
+    <script src='vein.js'></script>
+    <script>
+      var pulse = Pulsar.createClient({host: 'localhost', port: 4001});
+      channel = pulse.channel('test');
+      channel.emit('ping', 2);
+      channel.on('pong', function(num){
+        console.log('num:', num);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

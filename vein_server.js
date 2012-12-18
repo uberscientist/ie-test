@@ -9,7 +9,7 @@ var connect = require('connect');
 var app = connect();
 app.use(connect.static('static_vein'));
 app.use(function(req, res, next){
-  console.log('connect req:', req.headers);
+  //console.log('connect req:', req.headers);
   next();
 });
 app.listen(4000);
@@ -26,5 +26,5 @@ var veinServer = {
 var vein = Vein.createServer(veinServer);
 
 vein.add('test', function(res, a, b){
-  res.reply('Recieved:' + a + ', ' + b);
+  res.reply('Recieved:' + a + ', ' + b[0]);
 });

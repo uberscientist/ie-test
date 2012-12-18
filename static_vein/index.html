@@ -7,13 +7,14 @@
       var vein = Vein.createClient({host: 'localhost', port: 4002});
 
       vein.ready(function(services){
-        console.log('services:' + services);
+        document.write('services:' + services);
         vein.test('testing!', [2,3], function(result){
-          console.log(result);
+          document.write(result);
         });
       });
     </script>
   </head>
   <body>
+  testing~
   </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "ie-test",
+  "name": "ie-test-current",
   "version": "0.0.1",
   "dependencies": {
     "pulsar": "*",

@@ -1,7 +1,7 @@
 /**
-* 4000: static server
-* 4001: pulsar server
-* 4002: vein server
+* 5000: static server
+* 5001: pulsar server
+* 5002: vein server
 **/
 
 //var http = require('http');
@@ -17,7 +17,7 @@ app.use(function(req, res, next){
   next();
 });
 
-app.listen(4000);
+app.listen(5000);
 
 //Vein server
 var veinServer = connect();
@@ -27,7 +27,7 @@ veinServer.use(function(req, res, next){
   next();
 });
 
-var vein = Vein.createServer(veinServer.listen(4002));
+var vein = Vein.createServer(veinServer.listen(5002));
 
 vein.add('test', function(res, a, b){
   res.reply(' Yes! The answer is ' + a * b);

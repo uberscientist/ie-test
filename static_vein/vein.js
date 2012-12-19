@@ -2668,8 +2668,7 @@ exports.qs = function (obj) {
         return done(true);
       },
       error: function(socket, err) {
-        console.log(err);
-        //throw err;
+        throw err;
       },
       message: function(socket, msg) {
         var k, _i, _len, _ref, _ref2;

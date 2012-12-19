@@ -4,7 +4,7 @@
     <script src='pulsar.js'></script>
     <script src='vein.js'></script>
     <script>
-      var pulse = Pulsar.createClient({host: 'localhost', port: 4001});
+      var pulse = Pulsar.createClient({host: 'localhost', port: 5001});
       channel = pulse.channel('test');
       channel.emit('ping', 2);
       channel.on('pong', function(num){

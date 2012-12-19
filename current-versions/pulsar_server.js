@@ -1,7 +1,7 @@
 /**
-* 4000: static server
-* 4001: pulsar server
-* 4002: vein server
+* 5000: static server
+* 5001: pulsar server
+* 5002: vein server
 **/
 var http = require('http');
 var Pulsar = require('pulsar');
@@ -15,15 +15,15 @@ app.use(function(req, res, next){
   next();
 });
 
-app.listen(4000);
+app.listen(5000);
 
 var pulsarServer = http.createServer(function(req, res){
   console.log('pulsar req:', req.headers);
-}).listen(4001);
+}).listen(5001);
 
 var options = {
   host: 'localhost',
-  port: 4001,
+  port: 5001,
 }
 
 var pulse = Pulsar.createServer(pulsarServer, options);

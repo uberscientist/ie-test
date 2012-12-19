@@ -26,5 +26,5 @@ var veinServer = {
 var vein = Vein.createServer(veinServer);
 
 vein.add('test', function(res, a, b){
-  res.reply('Recieved:' + a + ', ' + b[0]);
+  res.reply('success! Answer is ' + (a * b));
 });

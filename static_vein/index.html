@@ -4,17 +4,16 @@
     <script src='pulsar.js'></script>
     <script src='vein.js'></script>
     <script>
-      var vein = Vein.createClient({host: 'localhost', port: 4002});
+      var vein = Vein.createClient({port: 4002});
 
       vein.ready(function(services){
-        document.write('services:' + services);
-        vein.test('testing!', [2,3], function(result){
-          document.write(result);
+        vein.test(6,7, function(result){
+          document.write('<h1>' + result + '</h1>');
         });
       });
     </script>
   </head>
   <body>
-  testing~
+    <h1>Not working yet... check JS console</h1>
   </body>
 </html>

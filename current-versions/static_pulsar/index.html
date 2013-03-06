@@ -4,10 +4,11 @@
     <script src='pulsar.js'></script>
     <script src='vein.js'></script>
     <script>
-      var pulse = Pulsar.createClient({host: 'localhost', port: 5001});
+      var pulse = Pulsar.createClient({host: 'mindsforge.com', port: 5001});
       channel = pulse.channel('test');
       channel.emit('ping', 2);
       channel.on('pong', function(num){
+        console.log('Looks like everything is working if num: 3 below.');
         console.log('num:', num);
       });
     </script>
